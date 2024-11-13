@@ -7,12 +7,17 @@ export default function PostsCard({ post }) {
         php: "pink"
     }
 
+    {
+        if (post.published === false) {
+            return null
+        }
+    }
 
 
 
     return (
 
-        <div className="card col-6" >
+        <div div div className="card col-6" >
             <img className="card-img" src={post.image} alt="" />
             <div className="card-body">
                 <h3 className="title"><span>Title: </span>{post.title} </h3>
@@ -26,7 +31,7 @@ export default function PostsCard({ post }) {
 
             </div>
 
-        </div >
+        </div>
 
 
     )
