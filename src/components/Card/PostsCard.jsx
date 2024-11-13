@@ -7,6 +7,9 @@ export default function PostsCard({ post }) {
         php: "pink"
     }
 
+
+
+
     return (
 
         <div className="card col-6" >
@@ -18,8 +21,13 @@ export default function PostsCard({ post }) {
                     {post.tags.map((tag, index) => <a
                         href="#" key={index} style={{ color: colors[tag] }}>{tag}
                     </a>)}
+
                 </div>
+
             </div>
-        </div>
+
+        </div >
+
+
     )
 }
